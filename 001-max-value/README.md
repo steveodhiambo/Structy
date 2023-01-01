@@ -7,7 +7,7 @@ Solve this without using any built-in list methods.
 You can assume that the list is non-empty.
 
 test_00:
-```go
+```js
 max_value([4, 7, 2, 8, 10, 9]); // -> 10
 ```
 
