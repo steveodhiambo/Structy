@@ -49,7 +49,7 @@ var testCases = []testCase{
 func TestMax_value(t *testing.T) {
 
 	for _, tc := range testCases {
-		output := Max_value(tc.input)
+		output := max_value(tc.input)
 
 		if output != tc.expectedOutput {
 			t.Errorf("Test case %q failed: expected %v, got %v", tc.name, tc.expectedOutput, output)

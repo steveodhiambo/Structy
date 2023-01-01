@@ -2,7 +2,7 @@ package maxvalue
 
 import "math"
 
-func Max_value(nums []float64) float64 {
+func max_value(nums []float64) float64 {
 	/*
 	 *set maximum to Infinity
 	 *to handle negative numbers
