@@ -44,6 +44,11 @@ var testCases = []testCase{
 		input:          713,
 		expectedOutput: false,
 	},
+	{
+		name:           "test_07",
+		input:          987,
+		expectedOutput: false,
+	},
 }
 
 func TestIsPrime(t *testing.T) {
