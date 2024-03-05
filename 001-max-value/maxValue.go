@@ -3,6 +3,11 @@ package maxvalue
 import "math"
 
 func max_value(nums []float64) float64 {
+
+	if len(nums) == 0 {
+		return 0
+	}
+
 	/*
 	 *set maximum to Infinity
 	 *to handle negative numbers
