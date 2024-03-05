@@ -44,6 +44,32 @@ var testCases = []testCase{
 		input:          []float64{2, 5, 1, 1, 4},
 		expectedOutput: 5,
 	},
+	// EDGE CASES
+	{
+		name:           "empty_slice",
+		input:          []float64{},
+		expectedOutput: 0,
+	},
+	{
+		name:           "max_float64",
+		input:          []float64{-1, 0, 1.7976931348623157e+308},
+		expectedOutput: 1.7976931348623157e+308,
+	},
+	{
+		name:           "identical_elements",
+		input:          []float64{3.14, 3.14, 3.14, 3.14},
+		expectedOutput: 3.14,
+	},
+	{
+		name:           "mixed_negative_positive",
+		input:          []float64{-100, 0, 50, -50, 100},
+		expectedOutput: 100,
+	},
+	{
+		name:           "very_small_differences",
+		input:          []float64{1.0001, 1.0002, 1.0003},
+		expectedOutput: 1.0003,
+	},
 }
 
 func TestMax_value(t *testing.T) {
