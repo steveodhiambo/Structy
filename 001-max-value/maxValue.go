@@ -1,17 +1,14 @@
-package maxvalue
+package main
 
-import "math"
+import (
+	"fmt"
+	"math"
+)
 
 func max_value(nums []float64) float64 {
-
 	if len(nums) == 0 {
 		return 0
 	}
-
-	/*
-	 *set maximum to Infinity
-	 *to handle negative numbers
-	 */
 	max := math.Inf(-1)
 
 	for _, num := range nums {
@@ -21,4 +18,10 @@ func max_value(nums []float64) float64 {
 	}
 
 	return max
+}
+
+func main() {
+	numbers := []float64{1.2, 3.4, 2.5, 4.6, 0.7}
+	maxNum := max_value(numbers)
+	fmt.Printf("The maximum value is: %.2f\n", maxNum)
 }

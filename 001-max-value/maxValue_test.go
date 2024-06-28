@@ -1,4 +1,4 @@
-package maxvalue
+package main
 
 import "testing"
 
