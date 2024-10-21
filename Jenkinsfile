@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Structy Tests') {
+      steps {
+        sh 'cd Structy && go test -v ./...'
+      }
+    }
+
   }
 }
