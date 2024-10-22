@@ -1,13 +1,11 @@
 pipeline {
     agent any
     tools {
-        go 'go'
+        go 'Go'
     }
     environment {
-		SONAR_SCANNER_HOME = tool 'SonarQubeScanner'
-		SONAR_PROJECT_KEY = 'Go App
-'
-		
+		SONAR_SCANNER_HOME = tool 'SonarQubeScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+		SONAR_PROJECT_KEY = 'Go App'
 	}
 
     stages{
