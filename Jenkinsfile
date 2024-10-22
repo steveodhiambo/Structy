@@ -11,7 +11,7 @@ pipeline {
 	stages {
 		stage('Checkout Github'){
 			steps {
-				git branch 'main', credentialsId: 'github-cred', url: 'https://github.com/steveodhiambo/Structy.git'
+				git([url: 'https://github.com/steveodhiambo/Structy.git', branch: 'main', credentialsId: 'github-cred'])
 			}
 		}
 		
