@@ -1,7 +1,7 @@
 pipeline {
 	agent any
 	tools {
-		go 'Go'
+		go '1.19'
 	}
 	environment {
 		SONAR_PROJECT_KEY = 'Go-App'
