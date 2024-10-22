@@ -4,7 +4,7 @@ pipeline {
 		go 'Go'
 	}
 	environment {
-		SONAR_PROJECT_KEY = 'node'
+		SONAR_PROJECT_KEY = 'Go-App'
 		SONAR_SCANNER_HOME = tool 'SonarQubeScanner'
 	}
 
